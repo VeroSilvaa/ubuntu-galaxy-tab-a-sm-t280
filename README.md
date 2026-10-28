@@ -31,6 +31,9 @@ Baixe o arquivo **`ubuntu-minimal`** da página de
 | `ubuntu-gtexswifi-boot-twrp.zip` | Boot que inicia o Ubuntu (e o Android) | Pelo TWRP |
 | `ubuntu-gtexswifi-sd.img.xz` | Sistema Ubuntu para o microSD | balenaEtcher ou Rufus |
 
+Para conferir o download, compare com o `SHA256SUMS` da release
+(`sha256sum -c SHA256SUMS` no Linux; `certutil -hashfile ARQUIVO SHA256` no Windows).
+
 ## Instalação
 
 ### 1. TWRP (se ainda não tiver)
@@ -94,8 +97,9 @@ sudo install-ubuntu
     sem restaurar nada.
   - *Juntar partições vizinhas*: une partições para ter mais espaço (até ~7 GB).
     Para voltar ao layout original, use **Restaurar**.
-  - Antes de alterar qualquer coisa, o programa salva no microSD um **backup
-    completo do Android** e da tabela de partições.
+  - **Faça antes o backup do Android** pela opção **Fazer backup** (a instalação
+    não faz backup sozinha; ela avisa se não encontrar nenhum). A instalação
+    guarda apenas uma cópia da tabela de partições.
 - **Fazer backup** / **Restaurar** / **Verificar** o Android interno a qualquer momento.
 
 Depois de instalar: desligue, retire o microSD e ligue. Com o cartão presente,
